@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCINA DELIRANTE</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+    <div id="encabezado"> <h1 id="text1"><img src="comida.png" height="40" width="40"> Cocina Delirante</h1>
+                           <h2 id="text2"> En este sitio encontraras distintas recetas de Cocina
+                            
+                           </h2>
+                        </div>  
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="#home"> Inicio</a></li>
+            <li>
+                <a href="#">A cerca de</a>
+                <ul class="submenu">
+                    <li><a href="Nhistoria.html">Nuestra Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="#servicios"> Recetarios</a>
+                <ul class="submenu">
+                <li><a href="reposteria.html">Reposteria</a></li>
+                <li><a href="comida.html">comida</a></li>
+                <li><a href="recetasdia.html">recetas del dia</a></li>
+            </ul>
+            </li>
+            
+        </ul>
+        <p>En cocina delirante encontraras diferetes recetas tanto de comida a reposteria,<br>
+        guíate con nuestras recetas para que tus comida y/o postres queden deliciosos.<br></p>
+    <br><img class="shadow-hover" src="comida2.jpg" alt="comida">
+
+  
+<p>Quieres compartir tu receta con nuestros visitantes?</p>
+<form action="https://formspree.io/f/mjkrblnp" method="POST">
+  <h2>¡Envía tu receta!</h2>
+
+  <label for="titulo">Nombre de la receta*</label><br>
+  <input type="text" id="titulo" name="titulo" required><br><br>
+
+  <label for="ingredientes">Ingredientes (uno por línea)*</label><br>
+  <textarea id="ingredientes" name="ingredientes" rows="6" required></textarea><br><br>
+
+  <label for="pasos">Pasos de preparación*</label><br>
+  <textarea id="pasos" name="pasos" rows="6" required></textarea><br><br>
+
+  <label for="tiempo">Tiempo total (minutos)</label><br>
+  <input type="number" id="tiempo" name="tiempo" min="1"><br><br>
+
+  <label for="dificultad">Dificultad</label><br>
+  <select id="dificultad" name="dificultad">
+    <option value="facil">Fácil</option>
+    <option value="media">Media</option>
+    <option value="dificil">Difícil</option>
+  </select><br><br>
+
+  <label for="foto">Foto de tu plato (opcional)</label><br>
+  <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+  <button type="submit">Enviar receta</button>
+</form>
+<footer>
+  <p>&copy; 2025 COCINA DELIRANTE. Todos los derechos reservados.<br>
+             AUTOR: Joel Cardenas</p>
+ 
+</footer>
+  
+</body>
+</html>
